@@ -38,3 +38,6 @@ nano /etc/systemd/system/infinitude.service
 enable the service
 systemctl enable infinitude
 
+set thermostat proxy to the ip of the orange pi
+
+set infinitude config in home assistant to the ip of the orange pi
