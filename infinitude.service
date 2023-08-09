@@ -1,0 +1,16 @@
+[Unit]
+Description=Infinitude HVAC control
+After=network-online.target
+
+[Service]
+LogLevelMax=6
+Type=simple
+WorkingDirectory=/root/infinitude
+ExecStartPre=stty -F /dev/ttyUSB0 38400 cs8 -cstopb -parity -brkint -icrnl -imaxbel -opost -isig -iexten -echo -icanon min 1
+ExecReload=stty -F /dev/ttyUSB0 38400 cs8 -cstopb -parity -brkint -icrnl -imaxbel -opost -isig -iexten -echo -icanon min 1
+ExecStart=/root/infinitude/infinitude daemon -m production -l http://192.168.1.8:80
+Restart=always
+#RestartSec=17
+
+[Install]
+WantedBy=multi-user.target
