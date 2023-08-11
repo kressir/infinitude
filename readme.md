@@ -26,6 +26,7 @@ create config file /infinitude/infinitude.json
 got some errors when running via command line...
 "XMLin() requires either XML::SAX or XML::Parser at ./infinitude line 161"
 installed libxml-parser-perl
+
 apt install libxml-parser-perl
 
 set up service...
