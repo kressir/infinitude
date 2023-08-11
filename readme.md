@@ -13,13 +13,12 @@ Image a card
 boot to it
 connect via ethernet ssh (Putty)
 use orangepi-config
+  set time zone
   enable wifi
   disable ethernet
-apt update
-apt upgrade
+apt update && apt upgrade && apt autoremove
 
-install Infinitude using instructions here:
-https://github.com/nebulous/infinitude/
+install Infinitude on OrangePi using Raspberry Pi instructions here:
 https://github.com/nebulous/infinitude/wiki/Installing-Infinitude-on-Raspberry-PI-(Raspbian)
 
 create config file /infinitude/infinitude.json 
@@ -27,10 +26,7 @@ create config file /infinitude/infinitude.json
 got some errors when running via command line...
 "XMLin() requires either XML::SAX or XML::Parser at ./infinitude line 161"
 installed libxml-parser-perl
-
-also did 
-chmod 777 /dev/ttyUSB0
-not sure if needed though
+apt install libxml-parser-perl
 
 set up service...
 nano /etc/systemd/system/infinitude.service
