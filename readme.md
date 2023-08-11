@@ -1,12 +1,11 @@
 Installing infinitude on OrangePi Zero
+http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html
 
 Using a usb rs485 adapter
 
-http://www.orangepi.org/html/hardWare/computerAndMicrocontrollers/details/Orange-Pi-Zero-2.html
-
 Use the Ubuntu image...
-Orangepizero2_3.0.6_ubuntu_jammy_desktop_xfce_linux5.16.17.7z
-(the server image might work better as I never use local interface)
+I initiaaly did desktop, but then tried the server image
+Orangepizero2_3.0.6_ubuntu_jammy_server_linux5.16.17.7z
 
 The Orange Pi OS did not work - wifi did not work.
 
@@ -21,6 +20,7 @@ apt upgrade
 
 install Infinitude using instructions here:
 https://github.com/nebulous/infinitude/
+https://github.com/nebulous/infinitude/wiki/Installing-Infinitude-on-Raspberry-PI-(Raspbian)
 
 create config file /infinitude/infinitude.json 
 
